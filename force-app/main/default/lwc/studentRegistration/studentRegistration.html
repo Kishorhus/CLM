@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Student Registration">
+        <div class="slds-m-around_medium">
+            <lightning-input label="First Name" value={firstName} onchange={handleFirstNameChange}></lightning-input>
+            <lightning-input label="Last Name" value={lastName} onchange={handleLastNameChange}></lightning-input>
+            <lightning-input label="Email" value={email} onchange={handleEmailChange}></lightning-input>
+            <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
