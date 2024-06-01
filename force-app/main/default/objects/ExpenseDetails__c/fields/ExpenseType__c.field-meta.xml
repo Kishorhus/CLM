@@ -31,6 +31,8 @@
                 <default>false</default>
                 <label>Periodic Expense</label>
             </value>
+
+            
             <value>
                 <fullName>Variable Expense</fullName>
                 <default>false</default>
