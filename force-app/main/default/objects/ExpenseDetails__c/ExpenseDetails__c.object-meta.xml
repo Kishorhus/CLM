@@ -159,7 +159,7 @@
         <label>Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>ExpenseDetails</pluralLabel>
+    <pluralLabel>ExpenseDetails_Name</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
