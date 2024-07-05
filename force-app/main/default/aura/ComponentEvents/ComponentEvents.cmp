@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <aura:attribute name="text" type="String" default="Just a string. Waiting for change."/>
+    <input type="button" value="Flawed HTML Button" onclick="{!c.handleClick1}"/>
+        
+    <hr></hr>
+    <lightning:button label="Framework Button Clicked" onclick="{!c.handleClick}"/>
+    <br/>
+    <hr></hr>
+    {!v.text}
+</aura:component>

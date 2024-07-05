@@ -1,0 +1,14 @@
+<template>
+    <lightning-card  variant="Narrow"  title="WhatsApp Messenger" icon-name="standard:account">
+        <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+        <p class="slds-p-horizontal_small">Whatsup Integration with salesforce (custom component)</p>
+        <p slot="footer"></p>
+
+        <span class=" slds-align_absolute-center slds-p-button_medium">
+            <lightning-button variant="brand" label="Send Message" title="Send Message" onclick={MessageHandler}></lightning-button>
+
+        </span>
+
+    </lightning-card>
+
+</template>

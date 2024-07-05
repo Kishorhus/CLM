@@ -1,0 +1,9 @@
+<apex:page >
+    <apex:includeLightning />
+    <div id="flowContainer"></div>
+    <script>
+        $Lightning.use("c:FlowApp", function() {
+            $Lightning.createComponent("lightning:flow", {}, "flowContainer");
+        });
+    </script>
+</apex:page>

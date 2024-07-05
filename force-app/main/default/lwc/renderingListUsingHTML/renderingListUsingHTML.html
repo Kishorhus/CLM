@@ -1,0 +1,18 @@
+<template>
+	<lightning-card variant="Narrow" title="Hello" icon-name="standard:account">
+		<lightning-button-icon icon-name="utility:down" variant="border-filled" alternative-text="Show More"
+			slot="actions"></lightning-button-icon>
+		<p class="slds-p-horizontal_small">Rendering list using HTML (custom component)</p>
+		<p slot="footer">Card Footer</p>
+
+		<div class="slds-m-around_medium">
+			<ul>
+				<template for:each={contacts} for:item="Contact">
+					<li key={Contact.Id}>
+						{Contact.Name},{Contact.Title}
+					</li>
+				</template>
+			</ul>
+		</div>
+	</lightning-card>
+</template>

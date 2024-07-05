@@ -1,0 +1,10 @@
+<aura:component >
+    
+    <div class="slds-m-around_xx-large">
+        
+        <c:Childcomp2 aura:id="childCmp"/>
+        <!-- On button click child aura:method will be called-->
+        <lightning:button variant="brand" label="CallChild" onclick="{!c.ChangeValue}" />
+    </div>
+    
+</aura:component>

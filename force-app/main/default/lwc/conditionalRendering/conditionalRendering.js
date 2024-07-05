@@ -7,4 +7,6 @@ export default class ConditionalRendering extends LightningElement {
     handlerEvent(event){
         this.DetailsareVisible = event.target.checked;
     }
+
+    Method = 'true';
 }

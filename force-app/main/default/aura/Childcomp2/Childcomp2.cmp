@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <aura:method name="CallChildMessage"  action="{!c.displayMessage}" access="public"></aura:method>
+    
+    <aura:attribute name ="firstName" type="String"  ></aura:attribute>
+    <aura:attribute name ="LastName" type="String"  ></aura:attribute>
+    <aura:attribute name ="Age" type="Integer" ></aura:attribute>
+
+</aura:component>

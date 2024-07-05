@@ -1,0 +1,28 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <!--
+     <div class="slds-m-around_xx-large">
+        
+      <c:ChildComponent aura:id="childCmp"/> -->
+        <!-- On button click child aura:method will be called -->
+        <!--<lightning:button variant="brand" label="Call Child" onclick="{!c.callAuraMethod}" />
+    </div> -->
+    
+    <aura:attribute name="msgfromNotifier" type="String"></aura:attribute>
+    <aura:attribute name="Eventcount" type="Integer" default="0"></aura:attribute>
+	
+    <aura:handler name="cmpEvent" Event ="c:componentEvent" action= "{!c.handlecomponentEvent}"></aura:handler>
+                  
+	
+    <h1>
+     	component event handler
+    </h1>
+    
+    <p>{!v.msgfromNotifier}</p>
+    <p>{!v.label}</p>
+    <p>{!v.Eventcount}</p>
+    
+    
+    <hr></hr>
+    <c:ChildComponent></c:ChildComponent>
+
+</aura:component>

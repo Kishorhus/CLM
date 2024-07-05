@@ -1,0 +1,115 @@
+<template>
+
+    <lightning-tabset variant="scoped" >
+
+        <lightning-tab label="Expense Entry form">
+
+ 
+
+            <div class="slds-m-around_medium">
+
+                <lightning-card title="Expense Data Entry Form">
+
+                <div class="slds-p-around_medium">
+
+                <lightning-input label="Name" value={Name} onchange={handleNameChange}></lightning-input>
+
+                <lightning-input label="Expense type" value={Expensetype} onchange={handleExpensetypeChange}></lightning-input>
+
+                <lightning-input label="Discription" value={Discription} onchange={handleDiscriptionChange}></lightning-input>
+
+                <lightning-input label="Amount" value={Amount} onchange={handleAmountChange}></lightning-input>
+
+                <lightning-input type="date" label="Date" value={Date} onchange={handleDateChange}></lightning-input>
+
+       
+
+       
+
+                <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+
+                <p>{message}</p>
+
+                </div>
+
+                </lightning-card>
+
+                </div>
+
+        </lightning-tab>
+
+                            <!-- Expense List and Filter options -->
+
+<lightning-tab label="Expense List ">
+
+    <div class="slds-m-around_medium">
+
+        <lightning-card title="Expense List and Filters">
+
+            <div class="slds-p-around_medium">
+
+                <!-- Filter options -->
+
+                <div class="slds-form slds-form_stacked slds-size_1-of-2">
+
+                    <lightning-input type="date" label="Start Date" value={startDate} onchange={handleStartDateChange}></lightning-input>
+
+                    <lightning-input type="date" label="End Date" value={endDate} onchange={handleEndDateChange}></lightning-input>
+
+                    <lightning-input label="Expense Type" value={expenseType} onchange={handleExpenseTypeChange}></lightning-input>
+
+                    <!-- <lightning-input label="Status" value={status} onchange={handleStatusChange}></lightning-input>-->
+
+                    <lightning-combobox
+
+            name="Status"
+
+            label="Status"
+
+            value={status}
+
+            placeholder="Status"
+
+            options={options}
+
+            onchange={handleStatusChange} ></lightning-combobox>
+
+                    <lightning-button label="Apply Filters" onclick={applyFilters}></lightning-button>
+
+                </div>
+
+ 
+
+                <!-- Expense list table -->
+
+                <lightning-datatable
+
+                    data={filteredExpenses}
+
+                    columns={columns}
+
+                    key-field="Id">
+
+                </lightning-datatable>
+
+            </div>
+
+        </lightning-card>
+
+    </div>
+
+   
+
+ 
+
+        </lightning-tab>
+
+ 
+
+    </lightning-tabset>
+
+ 
+
+ 
+
+</template>

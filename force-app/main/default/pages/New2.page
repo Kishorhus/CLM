@@ -1,0 +1,11 @@
+<apex:page >
+    <h1>
+        Hi I'm practising the vs 
+    </h1>
+    <apex:pageBlock >
+    <apex:pageBlockSection title="the title here!">
+        Hii this is page block section hehre
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+</apex:page>

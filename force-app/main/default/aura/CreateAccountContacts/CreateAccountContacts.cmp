@@ -1,0 +1,20 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForRecordHome,force:lightningQuickAction" controller="CreateAccountContactsController">
+    <aura:attribute name="accountId" type="Id" />
+    <aura:attribute name="firstName" type="String" />
+    <aura:attribute name="lastName" type="String" />
+    
+    <div class="slds-p-around_medium">
+        <lightning:recordEditForm objectApiName="Contact">
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning:inputField fieldName="AccountId" value="{!v.accountId}" />
+                    <lightning:inputField fieldName="FirstName" value="{!v.firstName}" />
+                    <lightning:inputField fieldName="LastName" value="{!v.lastName}" />
+                </div>
+            </div>
+            <div class="slds-m-top_medium">
+                <lightning:button variant="brand" label="Create Contact" onclick="{!c.createContact}" />
+            </div>
+        </lightning:recordEditForm>
+    </div>
+</aura:component>
