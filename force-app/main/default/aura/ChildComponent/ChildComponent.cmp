@@ -1,0 +1,22 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <!--<aura:method name="childMessageMethod" action="{!c.getMessage}" access="public">
+        <aura:attribute name="childGreetingParam" type="String" default="Hello"/> 
+        <aura:attribute name="childPersonNameParam" type="String" default="World"/> 
+    </aura:method> -->
+    
+    
+    
+<!-- component event-->
+		<aura:registerEvent name ="cmpEvent" type="c:ComponentEvent"></aura:registerEvent>
+
+		<aura:attribute name ="messageString" type="String"></aura:attribute>  
+    
+            <h1>
+                Event notice
+            </h1>
+    <ui:inputText label = "Message" value ="{!v.messageString}"/>
+
+    <ui:button label=" fire component" press="{!c.firecomponentEvent}"></ui:button>
+    
+</aura:component>

@@ -1,0 +1,8 @@
+<apex:page >
+    <h1>
+         This is my first vs page for the salesforce
+    </h1>
+    <p>
+         this is my paragraph for this 
+    </p>
+</apex:page>

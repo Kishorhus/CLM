@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+	<p>
+		Salesforce is a cloud-based software designed to help businesses find more prospects, 
+        close more deals, and wow customers with amazing service1. 
+        It is a popular CRM tool for support, sales, and marketing teams worldwide2.
+        Using the Salesforce CRM, companies can track customer activity,
+        market to customers, and many more services   
+    </p>
+</aura:component>
